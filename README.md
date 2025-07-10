@@ -73,12 +73,14 @@ logging.level.org.hibernate.sql=DEBUG
 mvn spring-boot:run
 
 🧪 API Endpoints
-Method	Endpoint	Description	Auth Required
-POST	/api/v1/register	Register a staff user	❌ No
-GET	/api/v1/home	Home Page (after login)	✅ Yes
-GET	/api/v1/staff/{id}	Get staff by ID	✅ Yes
-GET	/getDetails	List all staff	❌ No
-POST	/login	Login form	❌ No
+| Method | Endpoint             | Description             | Auth Required |
+| ------ | -------------------- | ----------------------- | ------------- |
+| POST   | `/api/v1/register`   | Register a staff user   | ❌ No          |
+| GET    | `/api/v1/home`       | Home Page (after login) | ✅ Yes         |
+| GET    | `/api/v1/staff/{id}` | Get staff by ID         | ✅ Yes         |
+| GET    | `/getDetails`        | List all staff          | ❌ No          |
+| POST   | `/login`             | Login form              | ❌ No          |
+
 📄 Login page is served from static/login.html
 
 🔐 Security Configuration
